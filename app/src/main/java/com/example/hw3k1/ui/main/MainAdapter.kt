@@ -46,6 +46,8 @@ class MainAdapter(private var pictures: ArrayList<ImageModel>) :
     // My methods
 
     fun getArrayList() : ArrayList<ImageModel> {
+        bufferPics.clear()
+
         for (i in 0 until pictures.size) {
             if (pictures[i].shadow) {
                 bufferPics.add(pictures[i])
