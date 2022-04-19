@@ -1,15 +1,12 @@
 package com.example.hw3k1.ui.main
 
 import android.content.Intent
-import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.hw3k1.base.BaseActivity
 import com.example.hw3k1.databinding.ActivityMainBinding
 import com.example.hw3k1.models.ImageModel
 import com.example.hw3k1.ui.second.SecondActivity
-import java.io.Serializable
 
 
 class MainActivity : BaseActivity<ActivityMainBinding>() {
@@ -48,8 +45,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
 
     private fun nextButton() {
         binding.btnNext.setOnClickListener {
-            var buffer: ArrayList<ImageModel> = ArrayList()
-            buffer = adapter.getArrayList()
+            val buffer: ArrayList<ImageModel> = adapter.getArrayList()
 
             val intent = Intent(this, SecondActivity::class.java)
             intent.putExtra("array", buffer)

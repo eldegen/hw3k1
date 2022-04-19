@@ -1,6 +1,5 @@
 package com.example.hw3k1.ui.second
 
-import android.util.Log
 import android.view.LayoutInflater
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.hw3k1.base.BaseActivity

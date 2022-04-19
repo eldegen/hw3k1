@@ -18,7 +18,8 @@
             android:scaleType="centerCrop"
             tools:src="@drawable/ic_launcher_background"
             android:layout_width="120dp"
-            android:layout_height="120dp" />
+            android:layout_height="120dp"
+            tools:ignore="ContentDescription" />
 
         <View
             android:id="@+id/view_selected"
