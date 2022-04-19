@@ -43,8 +43,6 @@ class MainAdapter(private var pictures: ArrayList<ImageModel>) :
         return pictures.size
     }
 
-    // My methods
-
     fun getArrayList() : ArrayList<ImageModel> {
         bufferPics.clear()
 
